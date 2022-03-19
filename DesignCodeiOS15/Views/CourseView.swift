@@ -105,7 +105,7 @@ struct CourseView: View {
         Button {
             withAnimation(.closeCard) {
                 show.toggle()
-                model.showDeteil.toggle()
+                model.showDetail.toggle()
             }
         } label: {
             Image(systemName: "xmark")
@@ -204,7 +204,7 @@ struct CourseView: View {
     func close() {
         withAnimation(.closeCard.delay(0.3)) {
             show.toggle()
-            model.showDeteil.toggle()
+            model.showDetail.toggle()
         }
         
         withAnimation(.closeCard) {

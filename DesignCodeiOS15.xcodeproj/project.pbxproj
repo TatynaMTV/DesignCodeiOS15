@@ -29,6 +29,8 @@
 		E2D03B1427E65F3E003A0714 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D03B1327E65F3E003A0714 /* SignUpView.swift */; };
 		E2D03B1627E667D2003A0714 /* AngularButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D03B1527E667D1003A0714 /* AngularButtonStyle.swift */; };
 		E2D03B1827E676C7003A0714 /* InputStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D03B1727E676C7003A0714 /* InputStyle.swift */; };
+		E2D03B1A27E68231003A0714 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D03B1927E68231003A0714 /* ModalView.swift */; };
+		E2D03B1C27E68346003A0714 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D03B1B27E68346003A0714 /* SignInView.swift */; };
 		E2D554C627C4196F000EC5C9 /* CourseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D554C527C4196F000EC5C9 /* CourseItem.swift */; };
 		E2D554C827C41AF2000EC5C9 /* CourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D554C727C41AF2000EC5C9 /* CourseView.swift */; };
 		E2D554CA27C796BA000EC5C9 /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D554C927C796BA000EC5C9 /* Animations.swift */; };
@@ -59,6 +61,8 @@
 		E2D03B1327E65F3E003A0714 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		E2D03B1527E667D1003A0714 /* AngularButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AngularButtonStyle.swift; sourceTree = "<group>"; };
 		E2D03B1727E676C7003A0714 /* InputStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputStyle.swift; sourceTree = "<group>"; };
+		E2D03B1927E68231003A0714 /* ModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
+		E2D03B1B27E68346003A0714 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		E2D554C527C4196F000EC5C9 /* CourseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseItem.swift; sourceTree = "<group>"; };
 		E2D554C727C41AF2000EC5C9 /* CourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseView.swift; sourceTree = "<group>"; };
 		E2D554C927C796BA000EC5C9 /* Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
@@ -95,6 +99,8 @@
 				E2D554C727C41AF2000EC5C9 /* CourseView.swift */,
 				E2443AD427D90169004A79DE /* SearchView.swift */,
 				E2D03B1327E65F3E003A0714 /* SignUpView.swift */,
+				E2D03B1B27E68346003A0714 /* SignInView.swift */,
+				E2D03B1927E68231003A0714 /* ModalView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -255,6 +261,7 @@
 				E244CAF627C3BD7700270252 /* NavigationBar.swift in Sources */,
 				E2D03B1627E667D2003A0714 /* AngularButtonStyle.swift in Sources */,
 				E244CAE727BFA76100270252 /* BlobView.swift in Sources */,
+				E2D03B1C27E68346003A0714 /* SignInView.swift in Sources */,
 				E2BDE68B27BC3F93007DB435 /* ContentView.swift in Sources */,
 				E2AB9C5727C3E24400DE370C /* Course.swift in Sources */,
 				E2BDE68927BC3F93007DB435 /* DesignCodeiOS15App.swift in Sources */,
@@ -267,6 +274,7 @@
 				E2D554CC27C7B7F5000EC5C9 /* Model.swift in Sources */,
 				E244CAE927BFE9B000270252 /* TabBar.swift in Sources */,
 				E244CAFA27C3D8CF00270252 /* AnimatableFontModifier.swift in Sources */,
+				E2D03B1A27E68231003A0714 /* ModalView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

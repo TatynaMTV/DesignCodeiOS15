@@ -127,7 +127,7 @@ struct HomeView: View {
                 .onTapGesture {
                     withAnimation(.openCard) {
                         show.toggle()
-                        model.showDeteil.toggle()
+                        model.showDetail.toggle()
                         showStatusBar = false
                         selectedID = course.id
                     }
