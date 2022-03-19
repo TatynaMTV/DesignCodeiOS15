@@ -26,11 +26,11 @@
 		E2BDE68D27BC3F95007DB435 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2BDE68C27BC3F95007DB435 /* Assets.xcassets */; };
 		E2BDE69027BC3F95007DB435 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2BDE68F27BC3F95007DB435 /* Preview Assets.xcassets */; };
 		E2C8846927D9515100915E81 /* Suggestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2C8846827D9515100915E81 /* Suggestion.swift */; };
+		E2D03B1427E65F3E003A0714 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D03B1327E65F3E003A0714 /* SignUpView.swift */; };
 		E2D554C627C4196F000EC5C9 /* CourseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D554C527C4196F000EC5C9 /* CourseItem.swift */; };
 		E2D554C827C41AF2000EC5C9 /* CourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D554C727C41AF2000EC5C9 /* CourseView.swift */; };
 		E2D554CA27C796BA000EC5C9 /* Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D554C927C796BA000EC5C9 /* Animations.swift */; };
 		E2D554CC27C7B7F5000EC5C9 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D554CB27C7B7F5000EC5C9 /* Model.swift */; };
-		E2E5A29627E0B58C009146E6 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2E5A29527E0B58C009146E6 /* SignUpView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,11 +54,11 @@
 		E2BDE68C27BC3F95007DB435 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2BDE68F27BC3F95007DB435 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E2C8846827D9515100915E81 /* Suggestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Suggestion.swift; sourceTree = "<group>"; };
+		E2D03B1327E65F3E003A0714 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		E2D554C527C4196F000EC5C9 /* CourseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseItem.swift; sourceTree = "<group>"; };
 		E2D554C727C41AF2000EC5C9 /* CourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseView.swift; sourceTree = "<group>"; };
 		E2D554C927C796BA000EC5C9 /* Animations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animations.swift; sourceTree = "<group>"; };
 		E2D554CB27C7B7F5000EC5C9 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		E2E5A29527E0B58C009146E6 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +90,7 @@
 				E2AB9C5827C3F97000DE370C /* MatchedView.swift */,
 				E2D554C727C41AF2000EC5C9 /* CourseView.swift */,
 				E2443AD427D90169004A79DE /* SearchView.swift */,
-				E2E5A29527E0B58C009146E6 /* SignUpView.swift */,
+				E2D03B1327E65F3E003A0714 /* SignUpView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -253,7 +253,7 @@
 				E2BDE68927BC3F93007DB435 /* DesignCodeiOS15App.swift in Sources */,
 				E2D554C627C4196F000EC5C9 /* CourseItem.swift in Sources */,
 				E244CAF427C3BAF400270252 /* FeaturedItem.swift in Sources */,
-				E2E5A29627E0B58C009146E6 /* SignUpView.swift in Sources */,
+				E2D03B1427E65F3E003A0714 /* SignUpView.swift in Sources */,
 				E2D554CA27C796BA000EC5C9 /* Animations.swift in Sources */,
 				E244CAF827C3CE1900270252 /* PreferenceKeys.swift in Sources */,
 				E2D554CC27C7B7F5000EC5C9 /* Model.swift in Sources */,
