@@ -17,6 +17,9 @@ struct SignUpView: View {
   @State var password = ""
   @FocusState var focusedField: Field?
   @State var circleY: CGFloat = 120
+  @State var emailY: CGFloat = 0
+  @State var passwordY: CGFloat = 0
+  @State var circleColor: Color = .blue
   
   var body: some View {
     VStack(alignment: .leading, spacing: 16) {
@@ -32,11 +35,20 @@ struct SignUpView: View {
         .disableAutocorrection(true)
         .focused($focusedField, equals: .email)
         .shadow(color: focusedField == .email ? .primary.opacity(0.3) : .clear, radius: 10, x: 0, y: 3)
+        .overlay(geometry)
+        .onPreferenceChange(CirclePreferenceKey.self) { value in
+          emailY = value
+          circleY = value
+        }
       SecureField("Password", text: $password)
         .inputStyle(icon: "lock")
         .textContentType(.password)
         .focused($focusedField, equals: .password)
         .shadow(color: focusedField == .password ? .primary.opacity(0.3) : .clear, radius: 10, x: 0, y: 3)
+        .overlay(geometry)
+        .onPreferenceChange(CirclePreferenceKey.self, perform: { value in
+          passwordY = value
+      })
       Button {} label: {
         Text("Create an account")
           .frame(maxWidth: .infinity)
@@ -67,9 +79,10 @@ struct SignUpView: View {
     }
     .padding(20)
     .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 30, style: .continuous))
+    .coordinateSpace(name: "container")
     .strokeStyle(cornerRadius: 30)
     .background(
-      Circle().fill(.blue)
+      Circle().fill(circleColor)
         .frame(width: 68, height: 68)
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
         .offset(y: circleY)
@@ -82,11 +95,19 @@ struct SignUpView: View {
     .onChange(of: focusedField) { value in
       withAnimation {
         if value == .email {
-          circleY = 120
+          circleY = emailY
+          circleColor = .blue
         } else {
-          circleY = 190
+          circleY = passwordY
+          circleColor = .red
         }
       }
+    }
+  }
+  
+  var geometry: some View {
+    GeometryReader { proxy in
+      Color.clear.preference(key: CirclePreferenceKey.self, value: proxy.frame(in: .named("container")).minY)
     }
   }
 }
