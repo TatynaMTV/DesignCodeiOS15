@@ -82,19 +82,14 @@ struct SignUpView: View {
     }
     .padding(20)
     .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 30, style: .continuous))
-    .coordinateSpace(name: "container")
-    .strokeStyle(cornerRadius: 30)
     .background(
       Circle().fill(circleColor)
         .frame(width: 68, height: 68)
         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
         .offset(y: circleY)
     )
-    .shadow(color: Color("Shadow").opacity(0.2), radius: 30, x: 0, y: 30)
-    .padding(20)
-    .background(
-      Image("Blob 1").offset(x: 200, y: -100)
-    )
+    .coordinateSpace(name: "container")
+    .strokeStyle(cornerRadius: 30)
     .onChange(of: focusedField) { value in
       withAnimation {
         if value == .email {
