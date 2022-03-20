@@ -70,7 +70,7 @@ struct SignInView: View {
         .tint(.accentColor)
         .controlSize(.large)
         .shadow(color: Color("Shadow").opacity(0.2), radius: 30, x: 0, y: 30)
- 
+        
         Divider()
         
         HStack {
@@ -130,10 +130,10 @@ struct SignInView: View {
 }
 
 struct SignInView_Previews: PreviewProvider {
-    static var previews: some View {
-      ZStack {
-        SignInView()
-          .environmentObject(Model())
-      }
+  static var previews: some View {
+    ZStack {
+      SignInView()
+        .environmentObject(Model())
     }
+  }
 }

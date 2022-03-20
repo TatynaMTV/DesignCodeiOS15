@@ -28,32 +28,32 @@ struct SectionView: View {
   }
   
   var cover: some View {
-      VStack {
-        Spacer()
-      }
-      .frame(maxWidth: .infinity)
-      
-      .frame(height: 500)
-      .foregroundStyle(.black)
-      .background(
-        Image(section.image)
-          .resizable()
-          .aspectRatio(contentMode: .fit)
-          .padding(20)
-          .frame(maxWidth: 500)
-      )
-      .background(
-        Image(section.background)
-          .resizable()
-          .aspectRatio(contentMode: .fill)
-      )
-      .mask(
-        RoundedRectangle(cornerRadius: 0, style: .continuous)
-      )
-      .overlay(
-        overlayContent
-      )
-      .frame(height: 500)
+    VStack {
+      Spacer()
+    }
+    .frame(maxWidth: .infinity)
+    
+    .frame(height: 500)
+    .foregroundStyle(.black)
+    .background(
+      Image(section.image)
+        .resizable()
+        .aspectRatio(contentMode: .fit)
+        .padding(20)
+        .frame(maxWidth: 500)
+    )
+    .background(
+      Image(section.background)
+        .resizable()
+        .aspectRatio(contentMode: .fill)
+    )
+    .mask(
+      RoundedRectangle(cornerRadius: 0, style: .continuous)
+    )
+    .overlay(
+      overlayContent
+    )
+    .frame(height: 500)
   }
   
   var content: some View {

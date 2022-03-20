@@ -109,6 +109,8 @@ struct HomeView: View {
                 .offset(x: 32, y: -80)
                 .offset(x: minX / 2)
             )
+            .accessibilityElement(children: .combine)
+            .accessibilityAddTraits(.isButton)
           
           //                    Text("\(proxy.frame(in: .global).minX)")
         }
@@ -119,6 +121,7 @@ struct HomeView: View {
     .background(
       Image("Blob 1")
         .offset(x: 250, y: -100)
+        .accessibility(hidden: true)
     )
   }
   
@@ -133,6 +136,8 @@ struct HomeView: View {
             selectedID = course.id
           }
         }
+        .accessibilityElement(children: .combine)
+        .accessibilityAddTraits(.isButton)
     }
   }
   

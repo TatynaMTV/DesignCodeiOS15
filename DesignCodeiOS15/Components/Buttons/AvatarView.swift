@@ -35,7 +35,7 @@ struct AvatarView: View {
     .cornerRadius(10)
     .padding(8)
     .background(.ultraThinMaterial, in: RoundedRectangle(cornerRadius: 18, style: .continuous))
-  .strokeStyle(cornerRadius: 18)
+    .strokeStyle(cornerRadius: 18)
   }
 }
 
