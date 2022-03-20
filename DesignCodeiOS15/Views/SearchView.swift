@@ -62,7 +62,7 @@ struct SearchView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fill)
                         .frame(width: 44, height: 44)
-                        .background(Color("Bacground"))
+                        .background(Color("Background"))
                         .mask(Circle())
                     VStack(alignment: .leading, spacing: 4) {
                         Text(item.title).bold()

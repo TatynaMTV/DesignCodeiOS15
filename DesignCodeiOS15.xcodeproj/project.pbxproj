@@ -83,8 +83,8 @@
 		E244CAEE27C01D2300270252 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
-				E244CAE827BFE9B000270252 /* TabBar.swift */,
 				E2BDE68A27BC3F93007DB435 /* ContentView.swift */,
+				E244CAE827BFE9B000270252 /* TabBar.swift */,
 				E244CAF527C3BD7700270252 /* NavigationBar.swift */,
 			);
 			path = Navigation;
